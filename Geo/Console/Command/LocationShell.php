@@ -16,7 +16,7 @@ class LocationShell extends AppShell {
   // получаем файл geo базы
   $file = file_get_contents('http://ipgeobase.ru/files/db/Main/geo_files.zip');
   // прописываем пути для файлов
-  $path_dir = dirname(dirname(dirname(__FILE__))).DS.'tmp'.DS;
+  $path_dir = ROOT . DS . APP_DIR . DS . 'tmp' . DS;
   $path_file = 'geo_base.zip';
   $unzip = 'unzip';
 
