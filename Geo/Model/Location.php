@@ -1,4 +1,5 @@
 <?php
+App::import('Geo.Model', 'GeoAppModel');
 
 /**
  * Класс для определения местонахождения по IP
