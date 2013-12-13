@@ -96,10 +96,10 @@ class LocationShell extends AppShell {
    unlink($path_dir.$unzip.DS.'cidr_optim.txt');
    unlink($path_dir.$path_file);
   } else {
-   echo 'failed, code:'.$res.' ';
+   $this->out("failed, code:".$res."\n", 1, Shell::NORMAL);
   }
 
-  echo 'done';
+  $this->out("done\n", 1, Shell::NORMAL);
  }
 
 /**
